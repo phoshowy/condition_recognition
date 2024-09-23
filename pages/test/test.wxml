@@ -1,0 +1,23 @@
+<!--pages/test/test.wxml-->
+<view class="container">
+  <!-- 图片显示区域 -->
+  <view class="image-area">
+    <button bindtap="takePhoto" type="default">拍照上传图片</button>
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="aspectFit" class="preview-img"></image>
+  </view>
+
+  <!-- 症状选择区域 -->
+  <view class="text-area">
+    <view class="selected-content">
+      <block wx:for="{{selectedItems}}" wx:key="index">
+        <text>{{item}}<br/></text>
+      </block>
+    </view>
+
+    <picker mode="multiSelector" range="{{multiArray}}" value="{{multiIndex}}" bindchange="onPickerChange" bindcolumnchange="bindMultiPickerColumnChange">
+      <button type="default">选择症状</button>
+    </picker>
+
+    <button type="primary" bindtap="upload">上传</button>
+  </view>
+</view>

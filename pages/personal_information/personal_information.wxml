@@ -1,0 +1,54 @@
+<!--pages/personal_information/personal_information.wxml-->
+<image src="../image/返回.png" style="margin-top: 3.8rem;margin-left: 1rem;height: 20px;width: 20px;" bind:tap="back"></image>
+
+<view style="margin-top: 4rem;text-align: center;">
+  <text style="font-size:3rem;font-weight: 600;">患者信息录入</text>
+</view>
+<!--pages/signup/signup.wxml-->
+<view class="main">
+  <!-- <view class = "promptView">
+    <Text>注册信息填写</Text>
+  </view> -->
+  <form bindsubmit="onSubmit" bindreset="onReset">
+  <!-- 基本信息Box -->
+    <view class = "information-box">
+
+  
+      <view class="view-section view-line">
+        <label>姓<text decode="true">&nbsp;&nbsp;&nbsp;</text>名</label>
+        <input name = "username"  placeholder="请输入姓名" placeholder-class="placeholder-wxss" type="text" value="{{username}}"/>
+      </view>
+
+      <view class="view-section view-line">
+        <label>年<text decode="true">&nbsp;&nbsp;&nbsp;</text>龄</label>
+        <input name = "age"  placeholder="请输入年龄" placeholder-class="placeholder-wxss" type="number"/>
+      </view>
+
+      <view class="view-section view-line">
+        <label>性<text decode="true">&nbsp;&nbsp;&nbsp;</text>别</label>
+        <radio-group class="radio-group" name = 'gender'>
+          <radio value="男" checked="true">男</radio>
+          <radio value="女" style="margin-left: 15px;">女</radio>
+        </radio-group>
+      </view>
+
+
+      <view class="view-section view-line">
+        <label>联系方式</label>
+        <input name = "phone"  value="{{phone}}" type="number"/>
+      </view>
+      <!--数据绑定？？！！-->
+      <view class="view-section view-line">
+        <label>身份证号</label>
+        <input name = "id"  value="{{id}}" type="number"/>
+      </view>
+    
+      <view class="buttonGroup">
+        <button form-type="reset" type="default" style="margin-top: 20px; width: 40%;">重置</button>
+        <button form-type="submit" type="primary" style="margin-top: 20px; width: 40%;" bind:tap="next">新建</button>
+      </view>
+
+
+    </view>
+  </form>
+</view>

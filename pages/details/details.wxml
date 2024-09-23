@@ -1,0 +1,6 @@
+<view style="margin-top: 5rem;margin-left: 1rem;">
+  <text>{{name}}患者的基本情况</text>
+</view>
+
+<button style="margin-top: 5rem;" type="primary">历史症状辨识记录</button>
+<button style="margin-top: 1rem;" type="primary">患者个人基本信息</button>

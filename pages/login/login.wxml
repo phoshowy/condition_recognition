@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view style="margin-top: 10rem;text-align: center;">
+  <text style="font-size: 3rem;font-weight: 800;">状态辨识小程序</text>
+</view>
+<view style="margin-top: 20rem;"><button type="primary" bindtap="router1">状态辨识</button></view>
+<view style="margin-top: 2rem;"><button type="primary" bindtap="router2">查询患者</button></view>
+<view style="margin-top: 2rem;"><button type="primary" bindtap="router3">test</button></view>

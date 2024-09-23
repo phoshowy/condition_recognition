@@ -1,0 +1,30 @@
+<image src="../image/返回.png" style="margin-top: 3.8rem;margin-left: 1rem;height: 20px;width: 20px;" bind:tap="back"></image>
+
+<view class="container">
+  <view class="header">
+    <text class="title">患者查询</text>
+  </view>
+
+  <!-- 表头 -->
+  <view class="table-header">
+    <view class="table-cell">Name</view>
+    <view class="table-cell">Age</view>
+    <view class="table-cell">Registration Time</view>
+    <view class="table-cell">Operations</view>
+  </view>
+
+  <!-- 表格内容 -->
+  <view class="user-list">
+    <block wx:for="{{users}}" wx:key="index">
+      <view class="table-row">
+        <view class="table-cell">{{item.name}}</view>
+        <view class="table-cell">{{item.age}}</view>
+        <view class="table-cell">{{item.registration_time}}</view>
+        <view class="actions">
+        <button bindtap="test1" data-name="{{item.name}}">详情</button>
+        <button bindtap="test2" data-name="{{item.name}}" data-age="{{item.age}}">新增</button>
+      </view>
+      </view>
+    </block>
+  </view>
+</view>

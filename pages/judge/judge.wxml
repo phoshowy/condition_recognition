@@ -1,0 +1,11 @@
+<!--pages/judge/judge.wxml-->
+<view class="container" >
+
+  <view class="view-section view-line">
+        <label style="font-size: 1.2rem;font-weight: bolder;">身份证号</label>
+        <input   type="number" placeholder="患者身份证号" bindinput="bindIdInput" />
+  </view>
+
+  
+  <button style="margin-top: 50px;" type="default" bindtap="submit">校验</button>
+</view>

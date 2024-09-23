@@ -1,0 +1,61 @@
+/* pages/test/test.wxss */
+/* styles.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.image-area {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  height: 200px; /* 固定高度 */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-area {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  height: 200px; /* 固定高度 */
+  width: 100%;
+  overflow-y: auto; /* 支持滚动条 */
+}
+
+
+.container {
+  padding: 20px;
+}
+
+.selected-content {
+  
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height: 50px;
+}
+
+.selected-content text {
+  display: block;
+  margin-bottom: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.preview-img {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+margin-left: 5rem;
+  
+}

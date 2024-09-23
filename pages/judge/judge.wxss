@@ -1,0 +1,26 @@
+/* pages/judge/judge.wxss */
+.container{
+  box-shadow: 0px 3px 7px 0px rgba(85, 163, 255, 0.17);
+  background: #FFFFFF;
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 20px;
+  margin-top: 8rem;
+}
+.view-section{
+  border-bottom: 2px solid #f6f6f6;
+  margin-top: 25px;
+  font-size: 18px;
+}
+.view-line{
+  display: flex;
+  align-items: center;
+}
+input {
+  border: 1px solid #ccc;  /* 边框宽度为1px，边框颜色为灰色 (#ccc) */
+  border-radius: 5px;      /* 边框圆角半径为5px */
+  margin-left: 2rem;
+  width: 60%;             /* 输入框宽度为100% */
+  box-sizing: border-box;   /* 包含 padding 和 border 在内的宽度计算 */
+
+}

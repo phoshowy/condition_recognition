@@ -1,0 +1,63 @@
+/* pages/personal_information/personal_information.wxss */
+
+.main{
+  padding: 25px;
+}
+.promptView{
+  text-align: center;
+}
+.promptView text{
+  font-size: larger;
+  width: max-content;
+  height: fit-content;
+}
+.information-box{
+  box-shadow: 0px 3px 7px 0px rgba(85, 163, 255, 0.17);
+  background: #FFFFFF;
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 20px;
+}
+.information-box-title{
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+.view-section{
+  border-bottom: 2px solid #f6f6f6;
+  margin-top: 25px;
+  font-size: 18px;
+}
+.view-section label{
+  width: 26%;
+}
+.view-section input,radio{
+  margin-left: 10px;
+}
+.view-section button{
+  font-size: medium;
+  width: 45%;
+  font-style: normal;
+  background-color:#a5f2ff50;
+  margin-bottom: 10px;
+}
+.validationInput{
+  width: 20%;
+}
+.view-line{
+  display: flex;
+  align-items: center;
+}
+.buttonGroup{
+  display: flex;
+  flex-direction: row;
+}
+input {
+  border: 1px solid #ccc;  /* 边框宽度为1px，边框颜色为灰色 (#ccc) */
+  border-radius: 5px;      /* 边框圆角半径为5px */
+  margin-left: 2rem;
+  width: 60%;             /* 输入框宽度为100% */
+  height: 60%;
+  box-sizing: border-box;   /* 包含 padding 和 border 在内的宽度计算 */
+
+}

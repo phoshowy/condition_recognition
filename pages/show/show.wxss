@@ -1,0 +1,42 @@
+/* 容器样式 */
+.container {
+  padding: 20px;
+}
+
+/* 标题样式 */
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 2rem;  /* 减少标题与表格之间的距离 */
+  text-align: center;
+}
+
+/* 表头样式 */
+.table-header {
+  display: flex;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 15px 0; /* 增加表头的上下内边距 */
+  border-bottom: 2px solid #ccc;
+  justify-content: space-between; /* 确保单元格之间有足够的空间 */
+}
+
+/* 表格行样式 */
+.table-row {
+  display: flex;
+  padding: 15px 0; /* 增加表格内容的上下间距 */
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between; /* 确保内容与表头对齐 */
+}
+
+/* 表格单元格样式 */
+.table-cell {
+  flex: 1;
+  text-align: center;
+  padding: 0 15px; /* 增加单元格内容的左右内边距，确保内容不贴边 */
+}
+
+/* 内容的列表样式 */
+.user-list {
+  margin-top: 0; /* 避免表格内容与表头分离 */
+}

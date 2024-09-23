@@ -1,0 +1,30 @@
+<!--pages/test/test.wxml-->
+<view style="margin-left: 1rem;margin-top: 5rem;"><text style="font-weight: bolder;font-size: 1.5rem;">舌像采集</text></view>
+<view class="container">
+
+
+  <!-- 图片显示区域 -->
+  <view class="image-area">
+    
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="aspectFit" class="preview-img"></image>
+  </view>
+<button bindtap="takePhoto" type="default">拍照上传图片</button>
+</view>
+<view style="margin-left: 1rem;margin-top: 1.5rem;"><text style="font-weight: bolder;font-size: 1.5rem;">症状采集</text></view>
+<view class="container">
+  <!-- 症状选择区域 --><picker style="margin-top: 1rem;"mode="multiSelector" range="{{multiArray}}" value="{{multiIndex}}" bindchange="onPickerChange" bindcolumnchange="bindMultiPickerColumnChange">
+       <button  type="default">选择症状</button>
+    </picker>
+  <view class="text-area">
+    <view class="selected-content">
+      <block wx:for="{{selectedItems}}" wx:key="index">
+        <text>{{item}}<br/></text>
+      </block>
+    </view>
+
+    
+
+  </view>
+ 
+    <button style="margin-top: 1.5rem;" type="primary" bindtap="upload">上传</button>
+</view>
